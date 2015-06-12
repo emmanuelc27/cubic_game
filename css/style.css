@@ -1,0 +1,31 @@
+*{
+	margin: 0px auto;
+}
+
+body{
+	width: 100%;
+	text-align: center;
+}
+
+section{
+
+}
+
+footer{
+
+}
+
+.cubo{
+	width: 0em;
+	height: 0em;
+	position: relative;
+	bottom: -16em;
+	border: 5em solid;
+	border-top-color: red;
+	border-right-color: yellow;
+	border-bottom-color: green;
+	border-left-color: blue;
+}
+
+
+
