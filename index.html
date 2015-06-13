@@ -7,10 +7,18 @@
 </head>
 <body>
 	<section>
-		<div class="cubo">
-		</div>
+		<div id="ball"></div>
+		<div id="cubo"></div>
+		<button id="btn-girar" type="button" onclick="rotarDer()"><h1>GIRAR</h1></button>
 	</section>
 	<footer></footer>
-	<script type="text/javascript" href="js/script.js"></script>
+	<script type="text/javascript">
+		var ang = 0;
+		function rotarDer(){
+			ang = ang + 90;
+			document.getElementById('cubo').style.transform = 'rotate(' + ang + 'deg)';
+			//document.getElementById('cubo').css("transform", "rotate(90deg)"); 
+		}
+	</script>
 </body>
 </html>

@@ -15,17 +15,42 @@ footer{
 
 }
 
-.cubo{
+#cubo{
 	width: 0em;
 	height: 0em;
 	position: relative;
-	bottom: -16em;
+	bottom: -20em;
 	border: 5em solid;
 	border-top-color: red;
 	border-right-color: yellow;
 	border-bottom-color: green;
 	border-left-color: blue;
+	/*
+	border-top-color: rgba(0,0,0,0.1);
+	border-right-color: rgba(0,0,0,0.1);
+	border-bottom-color: rgba(0,0,0,0.1);
+	border-left-color: rgba(0,0,0,0.1);
+	*/
 }
 
+#btn-girar{
+	position: relative;
+	bottom: -27em;
+}
 
+/*--- Animation Ball ---*/
+@keyframes gota{
+	from {bottom: 2em;}
+	to {bottom: -25em;}
+}
+
+#ball{
+	width: 2em;
+	height: 2em;
+	border-radius: 50%;
+	background-color: rgba(0,0,0,0.3);
+	position: relative;
+	bottom: 2em;
+	animation: gota 2s linear infinite;
+}
 
