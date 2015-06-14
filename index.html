@@ -9,15 +9,44 @@
 	<section>
 		<div id="ball"></div>
 		<div id="cubo"></div>
-		<button id="btn-girar" type="button" onclick="rotarDer()"><h1>GIRAR</h1></button>
+		<button id="btn-girar" type="button" onclick="goteo()"><h1>GIRAR</h1></button>
 	</section>
 	<footer></footer>
 	<script type="text/javascript">
 		var ang = 0;
 		function rotarDer(){
-			ang = ang + 90;
+			ang += 90;
 			document.getElementById('cubo').style.transform = 'rotate(' + ang + 'deg)';
-			//document.getElementById('cubo').css("transform", "rotate(90deg)"); 
+		}
+
+		function color_rnd() {
+			var num = Math.floor((Math.random()*4)+1);
+			switch (num) {
+ 				case 1:
+        			// Color ROJO
+        			//window.alert("ROJO");
+        			document.getElementById('ball').style.background = 'red';
+        			break;
+			    case 2:
+			        // Color AMARILLO
+			        //window.alert("AMARILLO");
+			        document.getElementById('ball').style.background = 'yellow';
+			        break;
+			    case 3:
+			        // Color VERDE
+			        //window.alert("VERDE");
+			        document.getElementById('ball').style.background = 'green';
+			        break;
+			    case 4:
+			        // Color AZUL
+			        //window.alert("AZUL");
+			        document.getElementById('ball').style.background = 'blue';
+			        break;
+			    default:
+			    	// ERROR!
+			        window.alert("ERROR! Color random");
+			}
+
 		}
 	</script>
 </body>

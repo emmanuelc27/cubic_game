@@ -48,7 +48,7 @@ footer{
 	width: 2em;
 	height: 2em;
 	border-radius: 50%;
-	background-color: rgba(0,0,0,0.3);
+	background: rgba(0,0,0,0.3);
 	position: relative;
 	bottom: 2em;
 	animation: gota 2s linear infinite;
